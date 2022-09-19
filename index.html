@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <style>
+      div {
+        background-color: rgb(130, 161, 209);
+      }
+    </style>
+    <button>Mygtukas</button>
+    <script>
+      const derik = document.querySelector("button");
+      const apvalkas = document.querySelector("body");
+
+      derik.addEventListener("click", myFunction);
+
+      let square = 20;
+
+      function myFunction() {
+        let div = document.createElement("div");
+        div.style.height = `${square}px`;
+        div.style.width = `${square}px`;
+        apvalkas.appendChild(div);
+        square += 2;
+      }
+    </script>
+  </body>
+</html>
